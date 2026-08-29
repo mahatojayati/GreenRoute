@@ -1,0 +1,85 @@
+{
+  "project_name": "Smart Waste Management System",
+  "theme": "light",
+  "vibe_and_atmosphere": "Clean, transparent, organized, and motivating. Refreshing like nature, avoiding a sterile or chaotic look. Goal is to inspire trust and simplify recycling actions.",
+  "typography": {
+    "headings_font": "Outfit",
+    "body_font": "DM Sans",
+    "hierarchy": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl tracking-tight text-[#2C3E50]",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl tracking-tight text-[#2C3E50]",
+      "h3": "text-xl sm:text-2xl font-semibold text-[#2C3E50]",
+      "body": "text-base leading-relaxed text-[#2C3E50]/80",
+      "labels": "text-xs tracking-[0.2em] uppercase font-bold text-[#2E5A44]"
+    }
+  },
+  "colors": {
+    "primary_background": "#F8F9FA",
+    "surface_card": "#FFFFFF",
+    "primary_brand": "#2E5A44",
+    "text_primary": "#2C3E50",
+    "text_secondary": "#2C3E50/80",
+    "accent_blue": "#2980B9",
+    "accent_orange": "#E67E22",
+    "alert_red": "#C0392B"
+  },
+  "layouts": {
+    "spacing_system": "Generous spacing scale. Use p-6, p-8, p-12 for containers. Cards must have sufficient internal padding to prevent collision.",
+    "dashboard_grid": "grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6",
+    "bento_grid": "grid-cols-1 md:grid-cols-8 lg:grid-cols-12 gap-8 for the Home Page 4 sections",
+    "radius": "rounded-2xl for primary cards, rounded-xl for inner elements, rounded-full for pills/buttons to maintain soft nature-inspired edges"
+  },
+  "visual_enhancers": {
+    "shadows": "shadow-sm for clean subtle elevation, shadow-md on hover. Minimalist approach. Avoid heavy drop shadows.",
+    "borders": "1px solid border-[#2C3E50]/10",
+    "glassmorphism": "backdrop-blur-xl bg-white/80 border-b border-[#2C3E50]/10 for sticky headers"
+  },
+  "components_instructions": {
+    "buttons": "Pill-shaped (rounded-full). Primary CTA uses #2E5A44 background with white text. High-priority uses #E67E22. Hover: -translate-y-1, shadow-md.",
+    "cards": "Soft-edged rounded containers (rounded-2xl). White background (#FFFFFF) with 1px border or subtle shadow-sm. Avoid visual overload.",
+    "charts": "Shadcn/Recharts. Use soft organic colors (#2E5A44, #2980B9, #E67E22). Use Progress rings for recycling goals.",
+    "maps": "Minimalist interactive maps. Strip out heavy default labels if possible. Soft rounded edges for the map container.",
+    "navigation": "Persistent left-hand sidebar for Dashboard/Admin views. Top Nav for Main Landing Page. Active states highlighted in primary green (#2E5A44).",
+    "toasts": "Use Sonner for notifications (e.g., Missed collection alerts in Alert Red #C0392B)"
+  },
+  "motion": {
+    "hover": "Subtle -translate-y-1 on cards and buttons, text color shift on hover.",
+    "entrance": "Staggered fade-up for dashboard widgets, lists, and articles.",
+    "accessibility": "Always respect prefers-reduced-motion."
+  },
+  "media": {
+    "images": [
+      {
+        "category": "hero_background",
+        "url": "https://images.unsplash.com/photo-1609069258650-fd58e4c7b278?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzR8MHwxfHNlYXJjaHwyfHxjbGVhbiUyMGdyZWVuJTIwbW9kZXJuJTIwY2l0eSUyMHN0cmVldHxlbnwwfHx8fDE3ODM3ODM1MjB8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Clean modern city street used for main landing page hero section."
+      },
+      {
+        "category": "education_segregation",
+        "url": "https://images.unsplash.com/photo-1611284446314-60a58ac0deb9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTJ8MHwxfHNlYXJjaHwyfHxyZWN5Y2xpbmclMjBzZWdyZWdhdGlvbiUyMGJpbnN8ZW58MHx8fHwxNzg1ODI2MDQ1fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Red, yellow, green recycling bins for educational dashboard articles."
+      },
+      {
+        "category": "customer_support",
+        "url": "https://images.unsplash.com/photo-1766066014237-00645c74e9c6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODh8MHwxfHNlYXJjaHwzfHxjdXN0b21lciUyMHN1cHBvcnQlMjBmcmllbmRseXxlbnwwfHx8fDE3ODU4MjYwNDZ8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Friendly customer support agent for the help center / AI chatbot avatar."
+      }
+    ],
+    "icons": "lucide-react for clean, consistent dashboard iconography. Avoid overly complex icons."
+  },
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "You MUST NOT apply universal transition (e.g. transition: all). Use specific properties.",
+    "You MUST NOT center align the app container. Left-align dense content.",
+    "Always use modern button styles like pill-shaped with hover states.",
+    "NEVER use AI assistant emoji characters.",
+    "Prioritize Shadcn/UI for tables, selects, dropdowns, dialogs.",
+    "Use Recharts/Shadcn for progress rings and volume charts.",
+    "All interactive and key informational elements MUST include a data-testid attribute to facilitate robust automated testing.",
+    "DO NOT use complete transparent background in header, overlays, or any surface that has content under it."
+  ],
+  "accessibility": {
+    "contrast": "Ensure #F8F9FA background passes with #2C3E50 text. Use white text over #2E5A44 buttons.",
+    "focus": "focus:ring-2 focus:ring-[#2E5A44]/50 focus:outline-none"
+  }
+}
+
