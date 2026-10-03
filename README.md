@@ -1,15 +1,6 @@
 ````
 # 📁 Project Architecture & File Structure
 
-This project follows a **production-ready full-stack architecture** with separate frontend and backend applications.
-
-**Project Location**
-
-```text
-C:\Users\24jay\.gemini\antigravity\scratch\smart_waste_management
-```
-
----
 
 # 🏗️ Project Structure
 
